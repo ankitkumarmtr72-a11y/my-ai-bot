@@ -5,7 +5,7 @@ st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
 # Tumhari API Key
-genai.configure(api_key="AIzaSyCmjLGRJPbOk0q29pxZ_RmqeUH2ilFiiAg")
+genai.configure(api_key="AIzaSyDCO-9_tNJOPznZ8q3-w67ctblP4btFIXs")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 if "messages" not in st.session_state:
