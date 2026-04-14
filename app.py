@@ -5,7 +5,7 @@ st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
 # Maine yahan quotes (" ") ke andar teri key set kar di hai
-API_KEY = "AIzaSyC7hLD9x45Hh0Sz45iXYLULtEYp-LBNeLc"
+API_KEY = ("AIzaSyC7hLD9x45Hh0Sz45iXYLULtEYp-LBNeLc")
 genai.configure(api_key=API_KEY)
 
 # Model setup
