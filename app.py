@@ -6,7 +6,7 @@ st.title("🤖 My Personal AI Assistant")
 
 # Dhyan se dekho, yahan quotes (" ") lage hain
 API_KEY = "AIzaSyD_y56svEeHCneSWhZDW8wRA3gUBzlcbwo"
-
+print("Bhai ka AI Restart ho raha hai...")
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
