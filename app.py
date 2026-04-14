@@ -9,7 +9,7 @@ st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
 # TERI ASLI API KEY (Screenshot 005702.png se check ki maine)
-API_KEY = "AIzaSyD_y56svEeHCneSWhZDW8wRA3gUBzlcbow"
+API_KEY = "AIzaSyC9izrF6kc_mUdB89I44VlZgInv1rIOAsU"
 genai.configure(api_key=API_KEY)
 
 # Stable Model
