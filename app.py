@@ -5,7 +5,7 @@ st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
 # Dhyan se dekho, yahan quotes (" ") lage hain
-API_KEY = AIzaSyD_y56svEeHCneSWhZDW8wRA3gUBzlcbwo
+API_KEY = "AIzaSyD_y56svEeHCneSWhZDW8wRA3gUBzlcbwo"
 
 genai.configure(api_key=API_KEY)
 
