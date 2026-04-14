@@ -1,14 +1,18 @@
+import os
+# Ye line naye version ko install karne ke liye hai
+os.system('pip install --upgrade google-generativeai')
+
 import streamlit as st
 import google.generativeai as genai
 
 st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
-# Dhyan se dekho, yahan quotes (" ") lage hain
-API_KEY = "AIzaSyD_y56svEeHCneSWhZDW8wRA3gUBzlcbwo"
-print("Bhai ka AI Restart ho raha hai...")
+# TERI ASLI API KEY (Screenshot 005702.png se check ki maine)
+API_KEY = "AIzaSyD_y56svEeHCneSWhZDW8wRA3gUBzlcbow"
 genai.configure(api_key=API_KEY)
 
+# Stable Model
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 if "messages" not in st.session_state:
