@@ -4,11 +4,12 @@ import google.generativeai as genai
 st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
-# Tumhari API Key
-genai.configure(api_key="AIzaSyC7hLD9x45HhOSz4SiXYLULtEYp-LBNeLc")
+# Maine yahan quotes (" ") ke andar teri key set kar di hai
+API_KEY = "AIzaSyC7hLD9x45Hh0Sz45iXYLULtEYp-LBNeLc"
+genai.configure(api_key=API_KEY)
 
-# Latest model use kar rahe hain
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+# Model setup
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -23,7 +24,6 @@ if prompt := st.chat_input("Pucho bhai..."):
         st.markdown(prompt)
     
     with st.chat_message("assistant"):
-        # Ye rahi wo 'try' wali lines jo error pakdegi
         try:
             response = model.generate_content(prompt)
             st.markdown(response.text)
