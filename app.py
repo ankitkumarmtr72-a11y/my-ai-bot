@@ -5,7 +5,7 @@ st.set_page_config(page_title="Bhai Ka AI", page_icon="🤖")
 st.title("🤖 My Personal AI Assistant")
 
 # Tumhari API Key
-genai.configure(api_key=AIzaSyC7hLD9x45HhOSz4SiXYLULtEYp-LBNeLc)
+genai.configure(api_key="AIzaSyC7hLD9x45HhOSz4SiXYLULtEYp-LBNeLc")
 
 # Latest model use kar rahe hain
 model = genai.GenerativeModel('gemini-1.5-flash-latest')
